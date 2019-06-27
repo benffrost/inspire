@@ -1,4 +1,4 @@
-import BGImage from "../../models/BGImage.js"
+import BGImage from "../../models/bgimage.js"
 
 
 // @ts-ignore
