@@ -21,7 +21,11 @@
 	<div>
 		A Todo List
 		<div id="todo-error"></div>
-		<form onsubmit=""></form>
+
+		<form onsubmit="app.controllers.todoController.addTodo(event)">
+			<input type="text" name="description" required />
+			<button type="submit">Add Todo Item</button>
+		</form>
 		<div id="todos"></div>
 	</div>
 
