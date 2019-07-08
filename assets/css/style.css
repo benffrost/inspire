@@ -5,4 +5,20 @@
 
 #bg-image{
     background-size: cover ;
+    -webkit-text-stroke: 0.25px white;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-color: white;
+    color: black;
+    font-family: "Verdana", sans-serif
+}
+
+.btn-circle{
+  width: 50px;
+  height: 50px;
+  padding: 10px 16px;
+  font-size: 18px;
+  line-height: 1.33;
+  border-radius: 25px;
 }

@@ -12,6 +12,13 @@ export default class Weather {
   }
 
   get Template() {
-    return `${this.city} weather: <img src="http://openweathermap.org/img/wn/${this.icon}.png" alt="weather icon"></img> ${this.celcius} Deg C`
+    return `
+      <div class="col-4"></div>
+      <div class="col-1">
+        <img src="http://openweathermap.org/img/wn/${this.icon}.png" alt="weather icon"></img>
+      </div>
+      <div class="col">
+        <h1> ${this.celcius} &#176; Celcius</h1>
+      </div>`
   }
 }

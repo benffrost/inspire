@@ -6,14 +6,13 @@ function _drawTodos() {
 	//WHAT IS MY PURPOSE?
 	//to draw stuff? idk you are the one that declared the function, comments
 	let todolist = _todoService.Todos
-	let template = '<ul>'
+	let template = ''
 
 	todolist.forEach(todo => {
 		template += todo.Template
 	})
 
-	template += '</ul>'
-
+	template += ''
 
 
 	document.querySelector("#todos").innerHTML = template
@@ -43,7 +42,7 @@ export default class TodoController {
 		ev.preventDefault()
 
 		var form = ev.target
-		debugger
+
 
 		var todo = {
 			description: form.description.value
